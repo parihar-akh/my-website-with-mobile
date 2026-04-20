@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+}
+
+/* Projects */
+.projects {
+  padding: 50px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+}
